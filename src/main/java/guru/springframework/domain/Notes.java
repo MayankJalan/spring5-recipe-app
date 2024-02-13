@@ -12,7 +12,16 @@ public class Notes {
     private Long id;
     @OneToOne
     private Recipe recipe;
+    @Lob
     private String recipeNotes;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
 
     public Recipe getRecipe() {
         return recipe;
